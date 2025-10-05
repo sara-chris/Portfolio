@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Digital Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="header">
+        <nav>
+            <div class="brand">MyPortfolio</div>
+            <button class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="typed-text"></span></h1>
+            <p>Web Developer & Designer</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://cdn.theorg.com/6eeb30d7-b3c4-4beb-ac53-864e9f90424a_thumb.jpg" alt="Profile Photo" class="profile-photo">
+            <div>
+                <p>Hello! I'm a passionate Frontend Developer with hands-on experience in building 
+                    responsive portfolio websites and interactive web applications using HTML, CSS, JavaScript, and React. Skilled in creating intuitive user interfaces and passionate about learning new technologies to deliver engaging user experiences. Check my <a href="resume.png">resume</a> or find me on 
+                <a href="https://github.com/AlexJohn47/AlexJohn47">GitHub</a> & <a href="https://www.linkedin.com/in/alex-john-4a3a24234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="100%"></div></div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="100%"></div></div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="100%"></div></div>
+            </div>
+            <div class="skill">
+                <span>React</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="95%"></div></div>
+            </div>
+            <div class="skill">
+                <span>Node.js</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="80%"></div></div>
+            </div>
+            <div class="skill">
+                <span>Bootstrap</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="90%"></div></div>
+            </div>
+            <div class="skill">
+                <span>Vue.js</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="80%"></div></div>
+            </div>
+            <div class="skill">
+                <span>Angular</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="80%"></div></div>
+            </div>
+             <div class="skill">
+                <span>Figma</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="80%"></div></div>
+            </div>
+            <div class="skill">
+                <span>Git</span>
+                <div class="progress-bar"><div class="skill__progress" data-width="85%"></div></div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div class="project-card">
+                <img src="nw.png" alt="Project Image">
+                <h3>Weather App</h3>
+                <p>API-based web app using Javascript to display real time weather updates.</p>
+                <a href="https://anantagg.github.io/Weather-App/" class="btn">Demo</a>
+                <a href="https://github.com/ramanjeet-code/Weather_App" class="btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="https://raw.githubusercontent.com/evershopcommerce/evershop/dev/.github/images/banner.png" alt="Project Image">
+                <h3>E-commerce Store</h3>
+                <p>Developed a react based shopping site with product filtering , cart functionality,and payment integration.</p>
+                <a href="https://demo.evershop.io/#" class="btn">Demo</a>
+                <a href="https://github.com/evershopcommerce/evetheme" class="btn">GitHub</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div>© 2025 MyPortfolio</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
